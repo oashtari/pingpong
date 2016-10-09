@@ -1,9 +1,7 @@
 // Back-end
 var input;
 var number = [];
-var ping;
-var pong;
-var pingpong;
+// var pingpong = [];
 
 var pp = function (input) {
   if (input > 250) {
@@ -11,21 +9,24 @@ var pp = function (input) {
   } else {
     for (i=1; i<=input; i+=1) {
       number.push(i);
-      number.forEach(function(numbers){
-        if (numbers % 15 === 0) {
-          number.replace(numbers,"pingpong");
-        } else if (numbers % 5 === 0) {
-          number.replace(numbers,"pong");
-        } else if (numbers % 3 === 0) {
-          ping = number.slice(numbers);
-          number = number.replace(ping,"ping");
-        } else {
-          return (numbers)
-          }
-})
 }
 }
 }
+
+var pingpong = function(){
+    number.map(function(numbers){
+    if (numbers % 15 === 0) {
+      $("#result").append("<li>" + "pingpong" + "</li>");
+    } else if (numbers % 5 === 0) {
+      $("#result").append("<li>" + "pong" + "</li>");
+    } else if (numbers % 3 === 0) {
+      $("#result").append("<li>" + "ping" + "</li>");
+    } else {
+      $("#result").append("<li>" + numbers + "</li>");
+      }
+  })
+  }
+
 
 // else if (words.charAt(0) !== (vowel)) {
 //           firstLetter = words.slice(0,1);
@@ -37,14 +38,12 @@ $(document).ready(function(){
     event.preventDefault();
     input = parseInt($("input#number").val());
     pp(input);
+    pingpong();
     $("#result").show();
-
-  })
+  });
 });
 
-// $("#result").append("<li>" + "pingpong" + "</li>");
-// $("#result").append("<li>" + "pong" + "</li>");
-//   $("#result").append("<li>" + "ping" + "</li>");
+
 
 
 // A user should be able to enter a new number and see new results over and over again.

@@ -3,15 +3,15 @@
 // Break the program down into simple, individual behaviors with input/output examples. Begin with the simplest possible behavior. List these behaviors (also known as "specs" or "specifications") in the project's README.md file.
 
 
-# Vacation Suggester
+# Ping Pong array game
 
-#### Second Epicodus code review project, a basic vacation picker page utilizing what we have learned to date about HTML, CSS, Bootstrap, JavaScript and jQuery.
+#### Third Epicodus code review project, a game converting numbers to words.
 
 #### By Omid Ashtari
 
 ## Description
 
-A basic form input page which takes in answers to come up with a vacation destination suggestion.
+A game where a number is input, and resulting page needs to replace numbers divisible by 3-> "ping", numbers divisible by 5 -> "pong" and divisible by 15 -> "pingpong", while all other numbers are shows as is (e.g. 1 remains a 1, 2 remains a 2, but 3 becomes 'pong'. Program capitalizes on HTML, CSS, Bootstrap, JavaScript and jQuery.
 
 ## Setup/Installation Requirements
 
