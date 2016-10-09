@@ -35,7 +35,7 @@ CSS
 Bootstrap
 JavaScript
 jQuery
-gh-pages link (https://oashtari.github.io/vacation-suggester/)
+gh-pages link (https://oashtari.github.io/vacation-suggester/) 
 
 ### License
 
