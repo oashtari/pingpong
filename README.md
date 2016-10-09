@@ -20,6 +20,40 @@ A game where a number is input, and resulting page needs to replace numbers divi
 * Also open the HTML file in your favorite browser, I prefer Chrome by Google.
 * Edit as you wish for your own use.
 
+## Program specifications
+
+Program will recognize non-number entries and alert for a fix.
+Input: “a”
+Output: alert "please enter a number"
+
+Program will convert number entered as a string into an integer.
+Input: "1"
+Output: 1
+
+Program will recognize entry number > 250 and alert for a number <=250.
+Input: “346”
+Output: alert "please enter a smaller number"
+
+Program will recognize entry number <= 250 and create a list of numbers from 1 up to entry number.
+Input: "5"
+Output: 1,2,3,4,5
+
+Program will recognize numbers divided by 3 and replace them with the word 'ping'.
+Input: "5"
+Output: 1,2,ping,4,5
+
+Program will recognize numbers divided by 5 and replace them with the word 'pong'.
+Input: "5"
+Output: 1,2,ping,4,pong
+
+Program will recognize numbers divided by 15 and replace them with the word 'pingpong'.
+Input: "15"
+Output: 1,2,ping,4,pong,ping,7,8,ping,pong,11,ping,13,14,pingpong
+
+Program will empty the results div so each submission leads to a new list of numbers of letters.
+Input: new number
+Output: new list of numbers and words
+
 ## Known Bugs
 
 None to my knowledge currently.
@@ -35,7 +69,7 @@ CSS
 Bootstrap
 JavaScript
 jQuery
-gh-pages link (https://oashtari.github.io/pingpong) 
+gh-pages link (https://oashtari.github.io/pingpong)
 
 ### License
 
